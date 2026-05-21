@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - THOK</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js"></script>
+</head>
+<body>
+
+    <shared-header></shared-header>
+
+    <main class="shop-container">
+        
+        <div class="shop-toolbar">
+            <div class="filter-group">
+                <button class="filter-btn active">Всички</button>
+                <!-- <button class="filter-btn">Клавиатури</button>
+                <button class="filter-btn">Суичове</button>
+                <button class="filter-btn">Капачки</button> -->
+            </div>
+            
+            <div class="sort-group">
+                <label for="sort-select">Сортирай по:</label>
+                <select id="sort-select" class="sort-dropdown">
+                    <option value="featured">Препоръчани</option>
+                    <option value="price-low">Цена: Възходяща</option>
+                    <option value="price-high">Цена: Низходяща</option>
+                    <option value="newest">Най-нови</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            
+            <a href="caps-product1.html"><div class="product-card">
+                <div class="product-image-wrapper">
+                    <!-- <div class="product-badge">Ръчна изработка</div> -->
+                    <img src="images/caps-product1/img1.webp" alt="THOK Custom Keyboard" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gateron Double-Rail Magnetic Switch</h3>
+                    <!-- <p class="product-switches">Lubed Gateron Milky Yellows</p> -->
+                    <div class="product-price-row">
+                        <span class="price">35.00€</span>
+                        <button class="add-to-cart-btn" aria-label="Add to cart">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div></a>
+
+            <a href="caps-product2.html"><div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/caps-product2/img1.webp" alt="Mechanical Switches" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kailh Box Switch</h3>
+                    <!-- <p class="product-switches">Krytox 205g0 </p> -->
+                    <div class="product-price-row">
+                        <span class="price">18.99€</span>
+                        <button class="add-to-cart-btn" aria-label="Add to cart">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div></a>
+
+            <a href="caps-product3.html"><div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/caps-product3/img1.webp" alt="PBT Keycaps Pack" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kailh Deep Sea Silent Pro Box Switch</h3>
+                    <!-- <p class="product-switches">Custom</p> -->
+                    <div class="product-price-row">
+                        <span class="price">77.99€</span>
+                        <button class="add-to-cart-btn" aria-label="Add to cart">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div></a>
+
+            <a href="caps-product4.html"><div class="product-card">
+                <div class="product-image-wrapper">
+                    <!-- <div class="product-badge">По поръчка</div> -->
+                    <img src="images/caps-product4/img1.webp" alt="Custom mechanical keyboard macro pad" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Rosewood Switch</h3>
+                    <p class="product-switches"></p>
+                    <div class="product-price-row">
+                        <span class="price">49.99€</span>
+                        <button class="add-to-cart-btn" aria-label="Add to cart">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div></a>
+
+        </div>
+    </main>
+    <shared-footer></shared-footer>
+</body>
+</html>

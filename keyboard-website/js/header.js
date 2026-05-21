@@ -7,10 +7,9 @@ class SharedHeader extends HTMLElement {
               </div></a>
               <nav class="nav-links">
                   <a href="shop-keyboards.html">Custom Keyboards</a>
-                  <a href="shop-keyboards.html">Wireless Keyboards</a>
-                  <a href="#">Keycaps</a>
-                  <a href="#">Switches</a>
-                  <a href="#">Accessories</a>
+                  <a href="shop-keycaps.html">Keycaps</a>
+                  <a href="shop-switches.html">Switches</a>
+                  <a href="shop-acc.html">Accessories</a>
               </nav>
               <div class="nav-icons">
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -34,10 +33,9 @@ class FolderSharedHeader extends HTMLElement {
               </div></a>
               <nav class="nav-links">
                   <a href="../shop-keyboards.html">Custom Keyboards</a>
-                  <a href="../shop-keyboards.html">Wireless Keyboards</a>
-                  <a href="#">Keycaps</a>
-                  <a href="#">Switches</a>
-                  <a href="#">Accessories</a>
+                  <a href="../shop-keycaps.html">Keycaps</a>
+                  <a href="../shop-switches.html">Switches</a>
+                  <a href="../shop-acc.html">Accessories</a>
               </nav>
               <div class="nav-icons">
                   <i class="fa-solid fa-magnifying-glass"></i>
