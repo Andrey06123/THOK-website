@@ -10,6 +10,7 @@ class SharedHeader extends HTMLElement {
                   <a href="shop-keycaps.html">Keycaps</a>
                   <a href="shop-switches.html">Switches</a>
                   <a href="shop-acc.html">Accessories</a>
+                  <a href="custom-keyboard-3D.html">Custom</a>
               </nav>
               <div class="nav-icons">
                   <i class="fa-solid fa-magnifying-glass"></i>

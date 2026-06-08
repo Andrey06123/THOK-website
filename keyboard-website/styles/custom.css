@@ -1,0 +1,147 @@
+/* --- Customizer UI Layout --- */
+.configurator-section {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.option-label {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #222;
+}
+
+.option-label span {
+    font-weight: 400;
+    text-transform: none;
+    color: #666;
+    margin-left: 4px;
+}
+
+/* Material Pills Options */
+.material-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.mat-btn {
+    background-color: #fff;
+    border: 1px solid #d1d1d6;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mat-btn:hover, .mat-btn.active {
+    border-color: #0b6476;
+    color: #0b6476;
+    background-color: #fdfdfd;
+}
+
+.mat-btn.active {
+    font-weight: 700;
+    box-shadow: 0 0 0 1px #0b6476;
+}
+/* Loading Overlay Wrapper */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f2; /* Matches your current container background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+    border-radius: 8px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Minimalist Spinner Ring */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(11, 100, 118, 0.1);
+    border-top-color: #0b6476; /* Your brand color */
+    border-radius: 50%;
+    animation: spin 0.8s infinite linear;
+}
+
+.loading-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b6476;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Rounded Color Swatches */
+.swatch-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.swatch {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.swatch:hover {
+    transform: scale(1.1);
+}
+
+/* Double border ring on selected choices */
+.swatch.active {
+    border-color: #0b6476;
+    box-shadow: 0 0 0 3px #fff inset;
+}
+
+.main-image {
+    background-color: #111111; /* Matches your Three.js background color */
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px; /* Gives it a solid responsive height block */
+    
+    /* 🚀 CRITICAL: Prevents the 3D canvas from spilling outside this box */
+    overflow: hidden; 
+}
+
+/* 🚀 Forces the internal Three.js canvas to adapt to the container layout */
+.main-image canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}

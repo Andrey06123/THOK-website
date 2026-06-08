@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THOK | Wireless Mechanical Keyboards</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product.css">
+     <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="js/footer.js" defer></script>
+    <script src="js/header.js" defer></script>
+
+    
+</head>
+<body>
+    <shared-header></shared-header>
+    <main class="product-container">
+    
+    <section class="image-gallery">
+        <div class="main-image" id="my-3d-container">
+            <div id="3d-loader" class="loading-overlay">
+                <div class="spinner"></div>
+                <p class="loading-text">Loading 3D Experience...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details">
+        <h1 class="product-title">Make your own</h1>
+        <h2 class="product-subtitle">You can name it</h2>
+        
+        <div class="product-price">€50.00</div>
+        <p class="shipping-note"><a href="#">Shipping</a> calculated at checkout.</p>
+        
+        <div class="configurator-section">
+            
+            <div class="option-group">
+                <span class="option-label">Casing Material</span>
+                <div class="material-selector">
+                    <button class="mat-btn active" data-material="matte">Matte Plastic</button>
+                    <button class="mat-btn" data-material="metallic">Anodized Aluminum</button>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <span class="option-label">Outer Keycaps: <span id="outer-label-text">Black</span></span>
+                <div class="swatch-row" id="outer-swatches">
+                    <button class="swatch active" data-color="black" style="background-color: #1a1a1a;"></button>
+                    <button class="swatch" data-color="grey" style="background-color: #888888;"></button>
+                    <button class="swatch" data-color="navy" style="background-color: #1d3557;"></button>
+                    <button class="swatch" data-color="crimson" style="background-color: #e63946;"></button>
+                    <button class="swatch" data-color="forest" style="background-color: #2a9d8f;"></button>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <span class="option-label">Inner Keycaps: <span id="inner-label-text">White</span></span>
+                <div class="swatch-row" id="inner-swatches">
+                    <button class="swatch active" data-color="white" style="background-color: #ffffff; border: 1px solid #ccc;"></button>
+                    <button class="swatch" data-color="cream" style="background-color: #f4f1de;"></button>
+                    <button class="swatch" data-color="canary" style="background-color: #e9c46a;"></button>
+                    <button class="swatch" data-color="coral" style="background-color: #f4a261;"></button>
+                    <button class="swatch" data-color="lilac" style="background-color: #a8dadc;"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+        
+        <div class="btn-div">
+              <button>Buy now</button>
+        </div>
+
+        <div class="accordion-group">
+            <div class="accordion-item">
+                <button class="accordion-trigger">Specifications <span class="icon">+</span></button>
+            </div>
+        </div>
+        
+    </section>
+</main>
+
+    <footer class="page-footer">
+        <a href="index.html" class="btn-back-home"><i class="fa-solid fa-arrow-left"></i> BACK TO HOME</a>
+    </footer>
+    <shared-footer></shared-footer>
+  
+    <script type="module" src="./js/3d-view.js"></script>
+</body>
+</html>
