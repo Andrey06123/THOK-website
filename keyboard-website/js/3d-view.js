@@ -12,16 +12,6 @@ const colorPalette = {
 // Keep tracking variables of your parts globally or within closure scope
 let outerCapsMesh, innerCapsMesh, caseMesh;
 
-// Inside your loader.load function update your traverse assignment:
-/*
-    model.traverse(function (child) {
-        if (child.isMesh) {
-            if (child.name === 'Outer_Caps_MeshName') outerCapsMesh = child;
-            if (child.name === 'Inner_Caps_MeshName') innerCapsMesh = child;
-            if (child.name === 'Case_MeshName') caseMesh = child;
-        }
-    });
-*/
 
 // Set up UI Interaction Listeners
 document.querySelectorAll('.swatch-row .swatch').forEach(btn => {
@@ -71,7 +61,7 @@ const textureLoader = new THREE.TextureLoader();
 // Load your separate texture files
 const textureInnerKeycaps = textureLoader.load('./3d-models/textures/white_keycaps_texture.png');
 const textureOutterKeycaps = textureLoader.load('./3d-models/textures/black_keycaps_texture.png');
-const textureKeyboardBody = textureLoader.load('/3d-models/textures/keyboard_body_textures.png');
+//const textureKeyboardBody = textureLoader.load('/3d-models/textures/keyboard_body_textures.png');
 
 // Fix alignment and color profile (Essential for Three.js v0.160+)
 textureInnerKeycaps.flipY = false;
@@ -80,8 +70,8 @@ textureInnerKeycaps.colorSpace = THREE.SRGBColorSpace;
 textureOutterKeycaps.flipY = false;
 textureOutterKeycaps.colorSpace = THREE.SRGBColorSpace;
 
-textureKeyboardBody.flipY = false;
-textureKeyboardBody.colorSpace = THREE.SRGBColorSpace;
+// textureKeyboardBody.flipY = false;
+// textureKeyboardBody.colorSpace = THREE.SRGBColorSpace;
 // ... Keep all the rest of your 3D code below exactly the same ...
 
     // 1. Target your specific container box
@@ -165,9 +155,9 @@ loader.load(
                 }
 
                 if (child.name === 'keyboard_body') {
-                    child.material.map = textureKeyboardBody;
-                    child.material.needsUpdate = true;
-                    caseMesh = child;
+                    // child.material.map = textureKeyboardBody;
+                    // child.material.needsUpdate = true;
+                    // caseMesh = child;
                 }
             }
         });
