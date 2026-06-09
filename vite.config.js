@@ -1,11 +1,13 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'custom-keyboard-3D.html'
-      }
-    }
-  }
+        main: resolve(__dirname, "index.html"),
+        customKeyboard3D: resolve(__dirname, "custom-keyboard-3D.html"),
+      },
+    },
+  },
 });
