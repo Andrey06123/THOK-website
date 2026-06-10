@@ -59,8 +59,8 @@ document.querySelectorAll('.material-selector .mat-btn').forEach(btn => {
 const textureLoader = new THREE.TextureLoader();
 
 // Load your separate texture files
-const textureInnerKeycaps = textureLoader.load('./3d-models/textures/white_keycaps_texture.png');
-const textureOutterKeycaps = textureLoader.load('./3d-models/textures/black_keycaps_texture.png');
+const textureInnerKeycaps = textureLoader.load('/3d-models/textures/white_keycaps_texture.png');
+const textureOutterKeycaps = textureLoader.load('/3d-models/textures/black_keycaps_texture.png');
 //const textureKeyboardBody = textureLoader.load('/3d-models/textures/keyboard_body_textures.png');
 
 // Fix alignment and color profile (Essential for Three.js v0.160+)
@@ -122,7 +122,7 @@ controls.maxPolarAngle = Math.PI / 2;
     // 7. LOAD YOUR 3D MODEL (.glb file)
 const loader = new GLTFLoader();
 loader.load(
-    './3d-models/model/keyboard.glb',
+    '/3d-models/model/keyboard.glb',
     function (gltf) {
         const model = gltf.scene;
 
